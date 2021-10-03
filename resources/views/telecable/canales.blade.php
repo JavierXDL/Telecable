@@ -30,7 +30,7 @@
     <h2 style="font-size: 250%; font-family: 'Roboto', sans-serif;"> Canal 07</h2>
     </div>
 
-
+            <!-- Esta es la pruyeba quye se modifica-->
     
   </div> <!-- Fin del la primera fila -->
 
