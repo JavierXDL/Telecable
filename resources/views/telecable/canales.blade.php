@@ -31,6 +31,7 @@
     </div>
 
             <!-- Esta es la pruyeba quye se modifica-->
+            <h2> hola chan me gusta la masacuate</h2>
     
   </div> <!-- Fin del la primera fila -->
 
