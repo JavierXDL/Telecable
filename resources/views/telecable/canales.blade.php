@@ -30,7 +30,10 @@
     <h2 style="font-size: 250%; font-family: 'Roboto', sans-serif;"> Canal 07</h2>
     </div>
 
-
+    <div class="col-2">
+    <img loading="lazy" class="img-fluid" style="height: 150px;" src="{{ asset('assets/img/SQCSpng.png') }}"alt="">
+    <h2 style="font-size: 250%; font-family: 'Roboto', sans-serif;"> Canal 07</h2>
+    </div>
     
   </div> <!-- Fin del la primera fila -->
 
