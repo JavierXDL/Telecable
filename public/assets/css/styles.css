@@ -98,3 +98,25 @@
 
 }
 /* fin de lo que nos servira para heredar */
+/* para el icono de correo */
+.helpform{
+    position:fixed;
+    right: 1%;
+    top: 81%;
+    z-index: 2000;
+    font-size: 50px;
+}
+.helpform ul{
+    list-style: none;
+}
+.helpform ul li a{
+    display: inline-block;
+    color: #024fa7;
+    border-radius: 100%;
+    padding: 0px 0px;
+    text-decoration: none;
+
+}
+.helpform ul li .icon-mail4{
+    background-color: #ffffff;
+}

@@ -19,6 +19,8 @@
 
     </style>
     <link rel="stylesheet" href="{{ asset('assets/css/styles.css') }}">
+    <link rel="stylesheet" href="{{ asset('assets/css/fonts.css') }}">
+    <!--para el icono Del formulario de ayuda-->
 
     {{-- link de tipografia --}}
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -79,6 +81,65 @@
     @yield('content')
     <!--contentEnd-->
 
+    {{-- icono de correo para abrir el formulario de ayuda --}}
+    <div class="helpform">
+        <ul>
+            <li><a href="" data-toggle="modal" data-target="#exampleModalCenter" class="icon-mail4 img-responsive" ></a></li>
+        </ul>
+    </div>
+    {{-- fin de icono de correo --}}
+
+    {{--formulario de ayuda --}}
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog"
+        aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLongTitle">¿En que podemos ayudarte?</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    {{-- este es el contenido de el formulario --}}
+                    <form>
+                        <div class="form-group">
+                            <div class="form-row">
+                                <!-- para colocar nombre y numero-->
+                                <div class="col">
+                                    <label for="nombre">*Nombre </label>
+                                    <input type="text" class="form-control" id="nombre" placeholder="Nombre">
+                                </div>
+                                <div class="col">
+                                    <label for="telefono">Numero Telefonico </label>
+                                    <input type="text" class="form-control" id="telefono"
+                                        placeholder="Numero Telefonico">
+                                </div>
+                            </div><br><!-- fin para colocar nombre y numero-->
+                            <label for="exampleInputEmail1">*Correo Electronico</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1"
+                                aria-describedby="emailHelp" placeholder="Correo Electronico">
+
+                        </div>
+                        <div class="form-group">
+                            <label for="message-text" class="col-form-label">*Mensaje:</label>
+                            <textarea class="form-control" id="message-text"></textarea>
+                        </div>
+                        {{-- mensaje --}}
+                        <small class="form-text text-muted"> Todos los campos marcados son Obligatorios, Su informacion
+                            no
+                            sera conpartida.</small>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary btn-sm" data-dismiss="modal">Cancelar</button>
+                    <button type="button" class="btn btn-primary btn-sm" data-dismiss="modal">Enviar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    {{-- fin de formulario de ayda --}}
     <!--footer-->
     <footer style="
                     margin-top: 3rem;">
@@ -93,6 +154,7 @@
         </div>
     </footer>
     <!--End footer-->
+
     <!--script-->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
