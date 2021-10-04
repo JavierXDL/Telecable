@@ -33,7 +33,7 @@
         </div>
     </div><!-- Fin de mi container -->
     <!-- Fin del carrousel -->
-
+    <h1>hola esto es una prueba que si se sube lo hice yo DCF x2</h1>
     {{-- para abrir el formulario de ayuda --}}
     <!-- Button trigger modal -->
     <button type="button" class="btn btn-info" data-toggle="modal" data-target="#exampleModalCenter"> boton
